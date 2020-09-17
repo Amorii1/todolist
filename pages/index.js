@@ -1,38 +1,35 @@
 import { useState } from "react";
+
 const Home = () => {
-  const [todos, setTodos] = useState([]);
-  const [todo, setTodo] = useState("");
+  const [data, setData] = useState("");
+  const [list, setList] = useState([]);
+
+  const handleChange = (newData) => {
+    setData(newData.target.value);
+  };
+  const updateList = () => {
+    setList([...list, data]);
+    setData("");
+  };
   return (
     <div className="container">
       <div className="form">
-        <input
-          value={todo}
-          onChange={(val) => {
-            setTodo(val.target.value);
-          }}
-          placeholder="write smth"
-        />
-        <button
-          onClick={() => {
-            setTodos([...todos, todo]);
-            setTodo("");
-          }}
-        >
-          ADD Dude!
-        </button>
+        <input  value={data} onChange={handleChange} placeholder="Write something yoo!!" />
+        <button onClick={updateList}>So fucking Add!</button>
       </div>
-      <div className="todo-list">
-        {todos.map((item, index) => (
-          <div className="todo-item" key="index">
-            <p>{item}</p>
-            <button onClick={
-              ()=>setTodos(todos.filter((elemnt)=>elemnt !== item))
-            }>Remove</button>
-          </div>
-        ))}
+      <div className="list">
+          {list.map((listItem,index)=>(
+            
+        <div className="list-item">
+        <p>listItem</p>
+        <button onClick={()=>setList(list.filter((e)=>e!==listItem))}>
+         DELETE or DIE !!
+        </button>
+     </div>
+
+  ))}
       </div>
     </div>
   );
 };
-
 export default Home;
