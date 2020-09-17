@@ -21,7 +21,7 @@ const Home = () => {
           {list.map((listItem,index)=>(
             
         <div className="list-item">
-        <p>listItem</p>
+        <p>{listItem}</p>
         <button onClick={()=>setList(list.filter((e)=>e!==listItem))}>
          DELETE or DIE !!
         </button>
