@@ -1,4 +1,5 @@
-import '../css/app.scss'
+import '../css/app.scss';
+import 'antd/dist/antd.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

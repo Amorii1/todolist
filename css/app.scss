@@ -1,9 +1,16 @@
 .container{
     max-width: 800px;
     margin: auto;
+    margin-top: 100px;
 }
 
-.form{
+.todo-list{
+    .ant-card{
+     margin-top: 20px;
+    }
+    /*modification the ant lib component*/
+}
+.oldTodo .form{
     background-color: #e6e3e3;
     border-radius: 4px;
     padding: 20px;
@@ -28,7 +35,7 @@
 
 }
 
-.list{
+.oldTodo .list{
     .list-item{
         display: flex;
         align-items: center;
