@@ -17,6 +17,7 @@ const Home = () => {
   <div className="oldTodo" >
     <div className="container">
       <Link href="newIndex"><button ><h1>New todo</h1></button></Link>
+      <Link href="pictures"><button ><h1>Pictures album</h1></button></Link>
       <div className="form">
         <input
           value={data}

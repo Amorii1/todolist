@@ -1,8 +1,15 @@
 .container{
     max-width: 800px;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 100px;
 }
+
+.pics-container{
+        max-width: 800px;
+        margin: auto;
+        padding-top: 50px;
+    }
+
 
 .todo-list{
     .ant-card{
@@ -56,4 +63,20 @@
            border-radius: 4px;
         }
     }
+}
+.image-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.pics{
+    padding-bottom: 50px;
+    background-color: rgb(3, 54, 18);
+}
+
+.pics .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
