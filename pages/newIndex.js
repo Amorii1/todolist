@@ -16,7 +16,7 @@ setTodos(JSON.parse(_localStorage))
 
   return (
     <div className="container">
-      <Link  href="../"><Button  type="default" danger style={{marginBottom:"100px", height:"100%"}}><h1>OLD TODO</h1></Button></Link>
+      <Link  href="../"><Button type="default" danger style={{marginBottom:"100px", height:"100%"}}><h1>OLD TODO</h1></Button></Link>
       <div className="form">
         <Row gutter={20}>
           <Col span={18}>
